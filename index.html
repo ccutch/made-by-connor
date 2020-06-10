@@ -1,0 +1,45 @@
+<head>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+
+<!--TODO: replace with logo-->
+<div style="width: max-content;">
+    <h1 class="invert">Made By Connor</h1>
+
+    <div class="inverted container" style="--width: 300px;">
+        <p>
+            Welcome to my website!
+
+            Where we have containers that are inverted
+    </div>
+
+    <div class="outlined container">
+        You can have containers that are outlined
+
+    </div>
+
+    <div class="container w/position" style="
+        --x: 600px;
+        --y: 200px;
+        --width: 200px;
+    ">
+        You can even have small containers anywhere on the page.
+    </div>
+    <div style="height: 150px"></div>
+    <div id="container_demo" class="inverted container" style="--width:200px;">
+        Slide to adjust
+    </div>
+    <input
+        id="container_demo.input"
+        type="range"
+        min="150" max="420" value="200"
+    >
+
+</div>
+
+<script defer src="/main.js"></script>

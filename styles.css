@@ -1,0 +1,57 @@
+:root {
+    /* global variables */
+    --yellow: #f8e625d1;
+    --blue: #003775;
+}
+
+
+
+body {
+    background: var(--blue);
+    padding: 20px;
+
+    color: var(--yellow);
+    font-family: 'Roboto Mono', serif, monospace, sans-serif;
+    text-transform: uppercase;
+}
+
+p { margin: 0; }
+
+h1 {
+    font-family: sans-serif;
+    font-size: 3em;
+    text-transform: none;
+}
+
+
+
+.invert {
+    color: var(--blue);
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: var(--yellow);
+}
+
+
+.container {
+    padding: 10px;
+    width: 100%;
+    max-width: var(--width, calc(100% - 20px));
+    margin-bottom: 20px;
+}
+
+.container.w\/position {
+    position: fixed;
+    left: var(--x);
+    top: var(--y);
+}
+
+.outlined.container {
+    text-align: justify;
+    border: 2px solid var(--yellow);
+}
+
+.inverted.container {
+    background: var(--yellow);
+    color: var(--blue);
+    font-weight: normal;
+}
